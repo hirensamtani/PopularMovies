@@ -1,0 +1,70 @@
+<resources>
+    <!-- Insert API Key here Start-->
+    <string name="api_key">f1e2857bfe022ec6a51ff385722b82f2</string>
+    <!-- Insert API Key here end-->
+
+    <string name="app_name">Popular Movies</string>
+    <string name="action_settings">Settings</string>
+    <string name="poster_path">http://image.tmdb.org/t/p/w185/</string>
+    <string name="connection_error">Please check internet connection..</string>
+    <string name="empty_movie_list">No Movies to show</string>
+    <string name="empty_movie_review_list">No Reviews to show</string>
+    <string name="dialog_message">Loading...</string>
+    <string name="default_movie_name_text">Movie Name</string>
+    <string name="default_release_date_text">Release Date</string>
+    <string name="default_release_date_unavailable_text">Release date not available</string>
+    <string name="default_rating_text">Rating</string>
+    <string name="default_button_rating_text">MARK AS\n FAVOURITE</string>
+    <string name="default_movie_reviewer_text">Movie Reviewer</string>
+    <string name="default_movie_review_text">Movie Review</string>
+
+
+
+
+    <string name="unmark_button_rating_text">UNMARK FROM\n FAVOURITES</string>
+    <string name="favourite_mark_success">Movie marked as a favourite.</string>
+    <string name="favourite_unmark_success">Movie unmarked from favourites..</string>
+
+
+
+
+
+
+
+    <string name="default_synopsis_text">Synopsis</string>
+    <string name="unavailable_synopsis_text">Movie synopsis not available.</string>
+
+    <string name="trailer_header">Trailers:</string>
+    <string name="default_sort_order">popularity.desc</string>
+    <string name="favourites_sort_order">favourites</string>
+    <string name="youtubeURL">http://www.youtube.com/watch?v=</string>
+    <string name="shareHeader">Share Movie Trailer</string>
+    <string name="shareURLSubject">Hi...check out this movie trailer</string>
+    <string name="shareURLText">Hi...check out this movie trailer\n</string>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_movie_details">MovieDetails</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_title_change_movie_sort_order">Movie Sort Order</string>
+
+    <string-array name="pref_movie_sort_order_titles">
+        <item>Most Popular</item>
+        <item>Highest Rated</item>
+        <item>Favourites</item>
+    </string-array>
+
+    <string-array name="pref_movie_sort_order_values">
+        <item>popularity.desc</item>
+        <item>rating.desc</item>
+        <item>favourites</item>
+    </string-array>
+    <string name="title_activity_movie_review">Movie Review</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

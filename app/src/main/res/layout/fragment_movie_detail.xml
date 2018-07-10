@@ -1,0 +1,170 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hirensamtani.popularmovies.MovieDetailFragment"
+    android:nestedScrollingEnabled="true">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="horizontal">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow android:layout_width="match_parent"
+            android:padding="5dp"
+            android:background="#4dd0e1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/default_movie_name_text"
+                android:id="@+id/textViewMovieName"
+                android:background="#4dd0e1"
+                android:paddingBottom="2dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0"/>
+        </TableRow>
+
+
+        <TableRow android:padding="5dp">
+        <TableLayout>
+            <TableRow>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageViewMoviePoster"
+                    android:layout_alignParentStart="true"
+                    android:layout_column="0"/>
+
+
+                <TableLayout android:layout_column="1">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/default_release_date_text"
+                            android:id="@+id/textViewReleaseDate"
+                            android:layout_below="@+id/textViewMovieName"
+                            android:padding="15dp"
+                            android:layout_alignEnd="@+id/textViewMovieName"
+                            android:layout_toEndOf="@+id/imageViewMoviePoster"
+                            android:inputType="date"
+                            android:textSize="17dp"
+                            />
+                    </TableRow>
+                    <TableRow android:padding="10dp">
+                        <TableLayout>
+                            <TableRow android:padding="5dp" android:id="@+id/movieRatingRow"
+                                android:background="#e0e0e0"
+                                android:layout_marginLeft="15dp">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/imageView"
+                                    android:layout_below="@+id/textViewReleaseDate"
+                                    android:layout_alignStart="@+id/textViewReleaseDate"
+                                    android:src="@drawable/ratings"
+                                    android:layout_column="0"
+                                    android:padding="5dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="viewStart"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="@string/default_rating_text"
+                                    android:textStyle="bold"
+                                    android:id="@+id/textViewRating"
+                                    android:layout_below="@+id/textViewReleaseDate"
+                                    android:layout_alignEnd="@+id/textViewReleaseDate"
+                                    android:layout_column="1"
+                                    android:paddingTop="10dp" />
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+                    <TableRow android:padding="10dp">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/default_button_rating_text"
+                            android:id="@+id/buttonMarkFavourite"
+                            android:padding="15dp"
+                            android:gravity="center"
+                            android:background="#b2ebf2"
+                            android:layout_below="@+id/textViewRating"
+                            android:textSize="12dp"
+                            android:onClick="onClickMarkAsFavourite"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toEndOf="@+id/imageView"
+                            android:layout_alignStart="@+id/imageView" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+
+
+
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+            <TableLayout>
+                <TableRow>
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/default_synopsis_text"
+                android:id="@+id/textViewSynopsis"
+                android:layout_below="@+id/imageViewMoviePoster"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/textViewRating"
+                android:textSize="10dp"
+                android:padding="5dp"
+                />
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+        <TableRow android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/trailer_header"
+                    android:id="@+id/textViewTrailer"
+                    android:padding="5dp"
+                    android:layout_below="@+id/textViewSynopsis"
+                    android:layout_alignParentStart="true"
+                     />
+        </TableRow>
+
+        <TableRow android:layout_width="wrap_content">
+            <TableLayout>
+                <TableRow android:layout_height="wrap_content">
+                    <ListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/trailerList"
+                        android:layout_below="@+id/textViewTrailer"
+                        android:layout_alignParentStart="true"
+                        android:nestedScrollingEnabled="true"
+                        />
+                </TableRow>
+            </TableLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</HorizontalScrollView>
+
+</FrameLayout>

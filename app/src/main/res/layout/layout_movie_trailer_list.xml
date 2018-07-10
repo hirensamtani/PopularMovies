@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--HorizontalScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TableRow>
+        <ImageView
+            android:id="@+id/play_button_img"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play_logo"/>
+
+        <TextView
+            android:id="@+id/movie_trailer_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            />
+
+
+
+    </TableRow>
+</TableLayout>
+<!--/HorizontalScrollView-->
